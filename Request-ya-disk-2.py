@@ -33,7 +33,7 @@ class YaUploader:
 if __name__ == '__main__':
     # Получить путь к загружаемому файлу и токен от пользователя
     path_to_file = os.path.join(os.getcwd(), "aloha.txt") 
-    token = 'AQAAAABPGYUbAADLW2W-eByeo0S-hA_wWEkKj24'
+    token = ''
     uploader = YaUploader(token)
     result = uploader._upload_file("disk:/test/aloha.txt", path_to_file)   # сработало только когда прописал полный путь к файлу disk: и название
 
